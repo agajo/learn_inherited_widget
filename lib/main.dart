@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'just_access.dart' as justAccess;
-import 'update_message_data.dart' as updateMessage;
+import 'just_access.dart' as just_access;
+import 'override_message.dart' as override_message;
+import 'update_count.dart' as update_count;
+import 'reduce_update.dart' as reduce_update;
 
 void main() {
   runApp(MaterialApp(
@@ -9,10 +11,13 @@ void main() {
       appBar: AppBar(),
       body: Column(
         children: [
-          PageButton(text: '単に値を取得する例', destination: justAccess.JustAccess()),
+          PageButton(text: '単に値を取得する例', destination: just_access.MainWidget()),
           PageButton(
               text: 'MessageDataを上書きする例',
-              destination: updateMessage.UpdateMessage()),
+              destination: override_message.MainWidget()),
+          PageButton(text: '毎秒更新する例', destination: update_count.MainWidget()),
+          PageButton(
+              text: '更新を間引きする例', destination: reduce_update.MainWidget()),
         ],
       ),
     ),

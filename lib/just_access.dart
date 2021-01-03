@@ -16,8 +16,8 @@ class MessageData extends InheritedWidget {
   }
 }
 
-class JustAccess extends StatelessWidget {
-  const JustAccess();
+class MainWidget extends StatelessWidget {
+  const MainWidget();
   @override
   Widget build(BuildContext context) {
     // Widgetツリーの上層部に、作ったInheritedWidgetを配置

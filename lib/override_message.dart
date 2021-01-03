@@ -15,8 +15,8 @@ class MessageData extends InheritedWidget {
   }
 }
 
-class UpdateMessage extends StatelessWidget {
-  const UpdateMessage();
+class MainWidget extends StatelessWidget {
+  const MainWidget();
   @override
   Widget build(BuildContext context) {
     return MessageData(
