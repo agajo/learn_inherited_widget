@@ -4,6 +4,8 @@ import 'just_access.dart' as just_access;
 import 'override_message.dart' as override_message;
 import 'update_count.dart' as update_count;
 import 'reduce_update.dart' as reduce_update;
+import 'implement_of.dart' as implement_of;
+import 'update_method.dart' as update_method;
 
 void main() {
   runApp(MaterialApp(
@@ -18,6 +20,9 @@ void main() {
           PageButton(text: '毎秒更新する例', destination: update_count.MainWidget()),
           PageButton(
               text: '更新を間引きする例', destination: reduce_update.MainWidget()),
+          PageButton(text: 'ofを実装する例', destination: implement_of.MainWidget()),
+          PageButton(
+              text: '状態更新メソッドの例', destination: update_method.MainWidget()),
         ],
       ),
     ),
