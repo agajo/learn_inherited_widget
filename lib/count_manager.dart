@@ -41,7 +41,7 @@ class CountManagerState extends State<CountManager> {
   int count = 0;
 
   // 下層からアクセスしたい状態更新用メソッドです。
-  void inclement() {
+  void increment() {
     setState(() {
       count++;
     });

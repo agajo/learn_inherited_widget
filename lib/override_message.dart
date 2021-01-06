@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 
 // InheritedWidgetを作ります。
 class MessageData extends InheritedWidget {
-  const MessageData({Key key, @required Widget child, @required this.message})
-      : assert(child != null),
+  const MessageData({
+    Key key,
+    @required Widget child,
+    @required this.message,
+  })  : assert(child != null),
         super(key: key, child: child);
 
   // 今回はmessageをコンストラクタで受け取ります。

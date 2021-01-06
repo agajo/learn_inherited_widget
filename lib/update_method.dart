@@ -25,11 +25,11 @@ class ButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-        child: const Text('inclement!!'),
+        child: const Text('increment!!'),
         onPressed: () {
           // ofメソッドでCountManagerの状態更新用メソッドにアクセスします！
           // ボタンをリビルドする必要はないので、listen:falseとします。
-          CountManager.of(context, listen: false).inclement();
+          CountManager.of(context, listen: false).increment();
         });
   }
 }
